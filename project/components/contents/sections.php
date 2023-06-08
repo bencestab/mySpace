@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="https://kit.fontawesome.com/c149b79a62.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <header></header>
-    <nav>
-        <mark></mark>
-        <section>
-            <a href="/">Home</a>
-            <a href="">About</a>
-            <a href="">Info</a>
-            <a href="">Contact</a>
-            <button>X</button>
-        </section>
-    </nav>
-    <main>
-        <section class="triple-cards">
+<section class="triple-cards">
             <article>
                 <div class="card-image" style="background-image: url('./assets/img/1242666_140393-OT0SU2-162.jpg');">
                 </div>
@@ -77,13 +52,3 @@
                 nesciunt aliquid inventore minus laudantium doloribus saepe? At earum eum harum id illo repellendus
                 sequi similique aspernatur.</article>
         </section>
-    </main>
-    <footer>
-        <p><i class="fa-solid fa-envelope"></i>stabbence@gmail.com</p>
-        <p><i class="fa-brands fa-github"></i>https://github.com/bencestab</p>
-        <p><i class="fa-solid fa-phone"></i>+36 70 639 00 05</p>
-    </footer>
-    <script src="./assets/js/main.js"></script>
-</body>
-
-</html>
