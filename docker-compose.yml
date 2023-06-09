@@ -6,7 +6,7 @@ services:
       - '8080:80'
     volumes:
       - ./project:/app/web
-      - ./my-httpd.conf:/etc/apache2/httpd.conf
+      - ./my_httpd.conf:/etc/apache2/httpd.conf
     environment:
       - PHP_INI_SHORT_OPEN_TAG=On
     networks:
