@@ -1,4 +1,5 @@
 <?php
+include "./components/database/database.php";       // MySQL Database Connection
 include "./components/meta/meta.php";               // META Header
 include "./components/header/header.php";           // Layout Header
 include "./components/nav/nav.php";                 // Navigation
