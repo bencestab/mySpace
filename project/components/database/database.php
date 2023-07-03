@@ -15,6 +15,7 @@
 
 
     // MySQL Connection with PDO
+        /*
         $connection = "mysql:host=$host;dbname=$database;charset=$charset";
         $options = [
             PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
@@ -23,9 +24,10 @@
         ];
             
         try {
-            $pdo = new PDO($connection, $user, $password, $options);
+            $db2 = new PDO($connection, $user, $password, $options);
         } catch (\PDOException $e) {
             throw new \PDOException($e->getMessage(), (int)$e->getCode());
         }
+        */
 	
 ?>

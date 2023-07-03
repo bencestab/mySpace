@@ -3,20 +3,21 @@
         <section>
             <?php
 
-            $query = 'SELECT * FROM navigation WHERE nav_state=1 ORDER BY nav_id ASC';
+            $sql = 'SELECT * FROM navigation WHERE nav_state=1 ORDER BY nav_id ASC';
 
             // MYSQLI
-            $sql = $query;
             $result = $db->query($sql);
             while ($row = $result->fetch_assoc()) {
                 echo '<a href="/">'.$row['nav_title'].'</a>';
             }
 
 			// PDO
-			$stmt = $pdo->query($query);
-			while ($row = $stmt->fetch()) {
-                echo '<a href="/">'.$row['nav_title'].'</a>';
+            /*
+			$result2 = $db2->query($sql);
+			while ($row2 = $result2->fetch()) {
+                echo '<a href="/">'.$row2['nav_title'].'</a>';
             }
+            */
             ?>
 
 
