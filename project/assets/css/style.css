@@ -141,13 +141,14 @@ main section {
     padding: 30px 10%;
 }
 
-main .triple-cards article {
+main .triple-cards a {
+    display: block;
     width: 27%;
     background-color: black;
     cursor: pointer;
 }
 
-main .triple-cards article:hover{
+main .triple-cards a:hover{
     transform: scale(1.05);
     box-shadow: 0 0 1rem black;
 }
