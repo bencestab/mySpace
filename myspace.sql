@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: mysql
--- Generation Time: Jul 03, 2023 at 08:03 PM
--- Server version: 8.0.33
--- PHP Version: 8.1.17
+-- Gép: mysql
+-- Létrehozás ideje: 2023. Júl 12. 12:53
+-- Kiszolgáló verziója: 8.0.33
+-- PHP verzió: 8.1.17
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `myspace_db`
+-- Adatbázis: `myspace_db`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `content`
+-- Tábla szerkezet ehhez a táblához `content`
 --
 
 CREATE TABLE `content` (
@@ -39,19 +39,20 @@ CREATE TABLE `content` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `content`
+-- A tábla adatainak kiíratása `content`
 --
 
 INSERT INTO `content` (`cont_id`, `cont_title`, `cont_url`, `cont_img`, `cont_content`, `cont_creator`, `cont_create`, `cont_state`) VALUES
-(1, 'Falcon 9 launches ESA’s Euclid space telescope', 'falcon_9_launches_esas_euclid_space_telescope', 'https://i0.wp.com/spacenews.com/wp-content/uploads/2023/07/f9-euclid-liftoff1.jpg?resize=1200%2C797&ssl=1', 'A SpaceX Falcon 9 lifted off at 11:12 a.m. Eastern July 1 from Cape Canaveral’s Space Launch Complex 40. The rocket deployed its payload, the European Space Agency’s Euclid spacecraft, 41 minutes later after placing it on a trajectory to the Earth-sun L-2 Lagrange point. The rocket’s booster, on its second flight after launching the Ax-2 private astronaut mission in May, landed on a droneship in the Atlantic Ocean.', 1, '2023-07-03 18:32:00', 1),
-(2, 'NASA to add fourth pair of roll-out arrays to ISS', '', 'https://i0.wp.com/spacenews.com/wp-content/uploads/2023/06/irosa23june15.jpg?resize=1200%2C670&ssl=1', 'Boeing and Redwire announced June 28 that they signed a contract for a fourth pair of ISS Roll-Out Solar Arrays, or IROSA, for the station. Redwire developed the array technology, known as ROSA, which uses solar arrays that are launched in a rolled-up form factor and then extend once in space.\r\n\r\n', 2, '2023-07-03 18:34:30', 1),
-(3, 'Firefly to launch Lockheed Martin small-satellite experiment', '', 'https://i0.wp.com/spacenews.com/wp-content/uploads/2023/06/Firefly-phot-_AlphaSunset-4-12-2-VSFB.jpg?resize=1200%2C900&ssl=1', 'The company in 2021 signed an agreement to launch up to 58 payloads with ABL Space, a small-satellite launcher in which Lockheed Martin has made a strategic investment. ABL’s first launch attempt in January failed and the company has not yet announced when it will try to launch again. ', 1, '2023-07-03 18:34:30', 1),
-(4, 'New Firefly to launch Lockheed Martin small-satellite experiment', '', 'https://i0.wp.com/spacenews.com/wp-content/uploads/2023/06/Firefly-phot-_AlphaSunset-4-12-2-VSFB.jpg?resize=1200%2C900&ssl=1', 'The company in 2021 signed an agreement to launch up to 58 payloads with ABL Space, a small-satellite launcher in which Lockheed Martin has made a strategic investment. ABL’s first launch attempt in January failed and the company has not yet announced when it will try to launch again. ', 1, '2023-07-03 18:34:30', 0);
+(1, 'Energia az űrből', 'energia_az_urbol', 'https://www.urvilag.hu/show.php?fn=maple-2.jpg', 'Első alkalommal sikerült a világűrben termelt napenergiát a Földre továbbítani. A Kaliforniai Műszaki Egyetemen (Caltech) folyó, a világűrben történő napenergia-termelést célzó projekt (SSPD, Space Solar Power Demonstrator) keretében végrehajtott mikrohullámú energiatovábbítási kísérlet (MAPLE, Microwave Array for Power-transfer Low-orbit Experiment) során először sikerült kimutatható mennyiségű energiát továbbítani a Földre ezzel a vezetlék nélküli módszerrel.', 1, '2023-07-03 18:32:00', 1),
+(2, 'Kísérleti műhold Csiucsüanból', 'kiserleti_muhold_csiucsuanbol', 'https://www.urvilag.hu/show.php?fn=lm2c-jun.jpg', 'A start az ország északnyugati részéből, Csiucsüanból (Jiuquan) történt június 9-én magyar idő szerint pontban 13 órakor. A hírekben Huliangvang Csisu Sijen (Hulianwang Jishu Shiyan) néven említett műhold egy a „dolgok internete” (internet of things, IoT) szolgáltatás céljára szolgáló, később kiépítendő műholdrendszer előfutára, kísérleti példánya lehet.', 2, '2023-07-03 18:34:30', 1),
+(3, 'Starlink 6-5', 'starlink_6-5', 'https://www.urvilag.hu/show.php?fn=B1058-worm.jpg', 'Bő két nappal a kaliforniai Starlink indítás után most Floridából következett egy újabb műholdcsoport, 22 taggal. A SpaceX internetszolgáltató műholdrendszerének további bővítésére szánt 22 darabos adag ezúttal új típusú (V2 Mini) űreszközökből állt. Ezért is fért be kevesebb példány a minap Kaliforniából pályára állított első szériás (V1.5) holdaknál nagyobb tömegű és térfogatú, fejlettebb képességekkel rendelkező űreszközökből a Falcon-9 rakéta orrkúpja alá.', 1, '2023-07-03 18:34:30', 1),
+(4, 'A gamma-kitörések ötven éve', 'a_gamma-kotoresek_otven_eve', 'https://www.urvilag.hu/show.php?fn=grb50-6.jpg', 'Fél évszázada, 1973. június 1-jén rejtélyes jelenséget fedeztek fel a csillagászok, amelyet gamma-kitörésnek vagy gamma-viharnak neveztek el, vagy angol megnevezése (gamma-ray burst) rövidítésével egyszerűen csak GRB-nek. Ma már a műholdaknak, például a Swift és a Fermi gamma-távcsöveknek köszönhetően átlagosan naponta fedeznek fel egy-egy újabb GRB-t. ', 1, '2023-07-03 18:34:30', 1),
+(5, 'VA261: az Ariane-5 búcsúja', 'va261_az_ariane-5_bucsuja', 'https://www.urvilag.hu/show.php?fn=heinrich-hertz-art.jpg', 'Legutolsó felbocsátásakor két geostacionárius pályára szánt távközlési műholdat indítottak az európai nehézrakétával. Az Ariane-5 VA261 jelzésű repülése – ahogy minden korábbi is – a Francia Guyanában fekvő Kourou űrközpontból (ELA-3 starthely) indult. Az időpont – műszaki okokból június közepéről elhalasztva – július 6-án magyar idő szerint pontban 0 órakor (helyben az időzóna.különbség miatt természetesen még 5-én) volt.', 1, '2023-07-04 20:31:20', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `navigation`
+-- Tábla szerkezet ehhez a táblához `navigation`
 --
 
 CREATE TABLE `navigation` (
@@ -64,7 +65,7 @@ CREATE TABLE `navigation` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `navigation`
+-- A tábla adatainak kiíratása `navigation`
 --
 
 INSERT INTO `navigation` (`nav_id`, `nav_title`, `nav_contentid`, `nav_creator`, `nav_create`, `nav_state`) VALUES
@@ -75,7 +76,7 @@ INSERT INTO `navigation` (`nav_id`, `nav_title`, `nav_contentid`, `nav_creator`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Tábla szerkezet ehhez a táblához `user`
 --
 
 CREATE TABLE `user` (
@@ -88,53 +89,53 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `user`
+-- A tábla adatainak kiíratása `user`
 --
 
 INSERT INTO `user` (`user_id`, `user_realname`, `user_nickname`, `user_password`, `user_adminstate`, `user_state`) VALUES
 (1, 'Balog Róbert', 'bobby', '123456', 'superadmin', 1),
-(2, 'Stab Bence', 'bence', '123456', 'superadmin', 1);
+(2, 'Stáb Bence', 'bence', '123456', 'superadmin', 1);
 
 --
--- Indexes for dumped tables
+-- Indexek a kiírt táblákhoz
 --
 
 --
--- Indexes for table `content`
+-- A tábla indexei `content`
 --
 ALTER TABLE `content`
   ADD PRIMARY KEY (`cont_id`);
 
 --
--- Indexes for table `navigation`
+-- A tábla indexei `navigation`
 --
 ALTER TABLE `navigation`
   ADD PRIMARY KEY (`nav_id`);
 
 --
--- Indexes for table `user`
+-- A tábla indexei `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`user_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- A kiírt táblák AUTO_INCREMENT értéke
 --
 
 --
--- AUTO_INCREMENT for table `content`
+-- AUTO_INCREMENT a táblához `content`
 --
 ALTER TABLE `content`
-  MODIFY `cont_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `cont_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `navigation`
+-- AUTO_INCREMENT a táblához `navigation`
 --
 ALTER TABLE `navigation`
   MODIFY `nav_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT a táblához `user`
 --
 ALTER TABLE `user`
   MODIFY `user_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
@@ -143,4 +144,3 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
