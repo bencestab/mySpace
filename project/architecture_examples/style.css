@@ -16,6 +16,7 @@
 * {
     padding: 0;
     margin: 0;
+    border: none;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     transition: all .3s ease-in-out;
@@ -55,6 +56,12 @@ section {
     background-color: var(--remarkable-mid);
 }
 
+section h1 {
+    color: var(--remarkable-white);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
 section article {
     padding: 1.5rem 2.5rem;
     background-color: var(--remarkable-dark);
@@ -82,20 +89,48 @@ section article h4 {
 
 section article div {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 50%;
-    opacity: 1;
-    background-color: var(--remarkable-orange);
+    height: 100%;
+    opacity: 0;
+    background-color: var(--remarkable-dark);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
-    border-top: 10px solid var(--remarkable-dark)
+    filter: grayscale(100%);
 }
 
 section article:hover div {
-    top: 100%;
-    opacity: 0;
+    opacity: 1;
+    filter: grayscale(0%);
+
+}
+
+section article div h2 {
+    padding: 1.5rem 2.5rem;
+    color: var(--remarkable-white);
+    background-color: var(--remarkable-orange);
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+}
+
+button {
+    background-color: var(--remarkable-orange);
+    color: var(--remarkable-white);
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--remarkable-orange_1);
+}
+
+.hide {
+    display: none;
 }

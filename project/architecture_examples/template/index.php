@@ -50,7 +50,9 @@
                         <h2>$record[cont_title]</h2>
                         <h4>szerző: $record[user_realname]</h4>
                         $record[cont_content]
-                        <div style='background-image: url($record[cont_img])'></div>
+                        <div style='background-image: url($record[cont_img])'>
+                            <h2>$record[cont_title]</h2>
+                        </div>
                     </article>";
         }
 

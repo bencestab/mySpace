@@ -16,7 +16,12 @@ if ($db->connect_error) {
 }
 
 // GET 
-    $sql = "SELECT * FROM content c LEFT JOIN user u ON(c.cont_creator=u.user_id) WHERE c.cont_state=1 ORDER BY c.cont_id DESC LIMIT 3";
+    $sql = 'SELECT *    FROM content c 
+                        LEFT JOIN user u 
+                        ON(c.cont_creator=u.user_id) 
+                        WHERE c.cont_state>-1 
+                        ORDER BY c.cont_id DESC 
+                        LIMIT 6;';
     $result = $db->query($sql);
 
     if ($result->num_rows > 0) {
